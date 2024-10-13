@@ -18,10 +18,7 @@ header {
     top: 0;
     position: fixed;
     z-index: 1000;
-}
-
-main, .hero, section {
-    margin-top: 100px; /* Add this to push the content below the fixed header */
+    height: 80px; /* Define a fixed height for the header */
 }
 
 .logo img {
@@ -48,6 +45,11 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #94d2bd;
+}
+
+/* Add padding to the top of the main content to avoid overlapping */
+main, .hero, section {
+    padding-top: 100px; /* Adjust this value to be a little more than the header height */
 }
 
 section {
