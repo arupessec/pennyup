@@ -15,7 +15,13 @@ header {
     padding: 15px 0;
     text-align: center;
     width: 100%;
-    z-index: 1;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+main, .hero, section {
+    margin-top: 100px; /* Add this to push the content below the fixed header */
 }
 
 .logo img {
