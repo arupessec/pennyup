@@ -10,7 +10,7 @@ body {
 header {
     background-color: rgba(0, 95, 115, 0.85); /* Slightly transparent */
     color: white;
-    padding: 10px 0; /* Reduce padding */
+    padding: 5px 0; /* Reduce padding */
     text-align: center;
     position: fixed;
     top: 0;
