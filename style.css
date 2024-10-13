@@ -6,8 +6,9 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header Styling */
 header {
-    background-color: rgba(0, 95, 115, 0.8); /* 50% transparent background */
+    background-color: rgba(0, 95, 115, 0.8); /* 50% transparent */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -38,9 +39,9 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Add enough space below the fixed header */
-.hero, section {
-    padding-top: 140px; /* Adjust for header height */
+/* Hero Section Styling */
+.hero {
+    padding-top: 200px; /* Adjust padding for more space */
     text-align: center;
     margin-bottom: 40px;
 }
@@ -51,7 +52,7 @@ nav ul li a {
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
     display: inline-block;
 }
 
@@ -60,10 +61,16 @@ nav ul li a {
     color: white;
 }
 
+/* Section Styling */
+section {
+    padding: 60px 20px; /* Spacing for all sections */
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
 /* How It Works Section */
 #how-it-works {
     text-align: center;
-    margin: 40px 0;
 }
 
 .steps {
@@ -88,11 +95,29 @@ nav ul li a {
     color: #333;
 }
 
-.cta-wrapper {
-    margin-top: 30px;
+/* Testimonials Section */
+.testimonial {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Footer Styling */
 footer {
     background-color: #005f73;
     color: white;
@@ -109,4 +134,21 @@ footer {
     color: white;
     margin: 0 10px;
     text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
