@@ -15,7 +15,9 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
+    opacity: 0.5; /* Set the transparency to 50% */
 }
+
 
 .logo img {
     width: 150px;
