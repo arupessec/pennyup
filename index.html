@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PennyUp - Automate Your Savings</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header class="animate-header">
         <div class="logo">
-            <img src="pennyup-logo.png" alt="PennyUp Logo">
+            <img src="pennyup-logo.png" alt="PennyUp Logo" />
         </div>
         <nav>
             <ul>
@@ -24,12 +23,12 @@
     </header>
 
     <section class="hero">
-        <h1>Saving Made Simple</h1>
-        <p>Automate your savings effortlessly with PennyUp.</p>
-        <a href="#" class="cta-button">Get Started</a>
+        <h1 class="fade-in">Saving Made Simple</h1>
+        <p class="fade-in delay-1s">Automate your savings effortlessly with PennyUp</p>
+        <a href="#" class="cta-button pulse">Get Started</a>
     </section>
 
-    <section id="features" class="content-section">
+    <section id="features" class="slide-up">
         <h2>Features</h2>
         <div class="feature-item">
             <h3>Automatic Savings</h3>
@@ -45,46 +44,26 @@
         </div>
     </section>
 
-    <section id="how-it-works" class="content-section">
+    <section id="how-it-works" class="fade-in delay-2s">
         <h2>How It Works</h2>
-        <div class="steps">
-            <div class="step">
-                <h3>1. Connect Your Bank Account</h3>
-                <p>Securely link your account to start automating your savings.</p>
-            </div>
-            <div class="step">
-                <h3>2. Set Your Savings Goals</h3>
-                <p>Create personalized goals to achieve your financial aspirations.</p>
-            </div>
-            <div class="step">
-                <h3>3. Watch Your Savings Grow</h3>
-                <p>Track your savings progress and celebrate every milestone.</p>
-            </div>
-        </div>
+        <ol>
+            <li>Connect Your Bank Account</li>
+            <li>Set Your Savings Goals</li>
+            <li>Watch Your Savings Grow</li>
+        </ol>
     </section>
 
-    <section id="pricing" class="content-section">
+    <section id="pricing" class="slide-up">
         <h2>Pricing</h2>
-        <div class="pricing-tiers">
-            <div class="tier">
-                <h3>Free Plan</h3>
-                <p>Access basic features and start saving today.</p>
-                <p><strong>$0/month</strong></p>
-            </div>
-            <div class="tier">
-                <h3>Premium Plan</h3>
-                <p>Unlock advanced features for serious savers.</p>
-                <p><strong>$5/month</strong></p>
-            </div>
-        </div>
+        <p>Try PennyUp for free or unlock premium features with our affordable plans.</p>
     </section>
 
-    <section id="about" class="content-section">
+    <section id="about" class="fade-in">
         <h2>About Us</h2>
-        <p>PennyUp is committed to helping you save more effortlessly and reach your financial goals. Our mission is to simplify savings with easy-to-use tools, giving you the power to achieve your dreams.</p>
+        <p>PennyUp is committed to helping you save more effortlessly and reach your financial goals.</p>
     </section>
 
-    <section id="contact" class="content-section">
+    <section id="contact" class="slide-up">
         <h2>Contact Us</h2>
         <form id="contact-form">
             <input type="text" placeholder="Your Name" required>
@@ -94,8 +73,10 @@
         </form>
     </section>
 
-    <footer>
+    <footer class="fade-in delay-3s">
         <p>&copy; 2024 PennyUp. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
