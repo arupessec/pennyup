@@ -4,21 +4,17 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 header {
-    background: #005f73;
-    color: #fff;
-    padding: 15px 0;
+    background-color: #005f73;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    width: 100%;
-    top: 0;
     position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 1000;
-    height: 80px; /* Define a fixed height for the header */
 }
 
 .logo img {
@@ -26,44 +22,67 @@ header {
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     display: flex;
     justify-content: center;
-    margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff; /* Ensure the text color is always white */
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
-    color: #94d2bd; /* Change to a distinct color on hover */
+.hero, section {
+    padding-top: 120px; /* Adjust for the fixed header */
+    text-align: center;
 }
 
-/* Add padding to the top of the main content to avoid overlapping */
-main, .hero, section {
-    padding-top: 100px; /* Adjust this value to be a little more than the header height */
+.cta-button {
+    background-color: #94d2bd;
+    color: #005f73;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
 }
 
-section {
-    padding: 40px;
-    margin: 20px;
-    background: #fff;
-    border-radius: 8px;
+.cta-button:hover {
+    background-color: #005f73;
+    color: white;
 }
 
 footer {
-    background: #005f73;
-    color: #fff;
+    background-color: #005f73;
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: auto;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.benefits-container, .steps, .testimonial, .store {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.benefit, .step, .testimonial, .store {
+    margin: 0 15px;
+    text-align: center;
 }
