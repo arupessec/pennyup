@@ -14,8 +14,8 @@ header {
     text-align: center;
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 1000;
+    width: 70%;
+    z-index: 500;
 }
 
 /* Ensure all content is pushed below the header */
