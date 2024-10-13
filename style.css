@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    min-height: 100vh; /* Ensure body takes up the full viewport height */
+    display: flex;
+    flex-direction: column; /* Allows footer to stay at the bottom */
 }
 
 header {
@@ -71,6 +74,11 @@ nav ul li a:hover {
     animation: pulse 2s infinite;
 }
 
+main {
+    flex: 1; /* Ensures the content grows to fill the available space, keeping the footer at the bottom */
+    padding: 20px;
+}
+
 section {
     padding: 40px;
     margin: 20px;
@@ -83,10 +91,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    /* Removed position fixed */
     position: relative; 
     width: 100%;
-    margin-top: 20px; /* Adds space between content and footer */
+    margin-top: auto; /* Ensures footer stays at the bottom of the content */
 }
 
 /* Additional fix for spacing */
