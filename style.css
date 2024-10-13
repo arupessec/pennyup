@@ -4,9 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    min-height: 100vh; /* Ensure body takes up the full viewport height */
     display: flex;
-    flex-direction: column; /* Allows footer to stay at the bottom */
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -14,11 +14,8 @@ header {
     color: #fff;
     padding: 15px 0;
     text-align: center;
-    position: fixed;
     width: 100%;
-    top: 0;
     z-index: 1;
-    animation: slideDown 1s ease-in-out;
 }
 
 .logo img {
@@ -29,6 +26,8 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -39,44 +38,10 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
     color: #94d2bd;
-}
-
-.hero {
-    background: #0a9396;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-    margin-top: 80px;
-    position: relative;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.cta-button {
-    background: #94d2bd;
-    color: #005f73;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
-}
-
-.cta-button:hover {
-    background: #005f73;
-    color: #fff;
-}
-
-.pulse {
-    animation: pulse 2s infinite;
-}
-
-main {
-    flex: 1; /* Ensures the content grows to fill the available space, keeping the footer at the bottom */
-    padding: 20px;
 }
 
 section {
@@ -91,66 +56,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: relative; 
-    width: 100%;
-    margin-top: auto; /* Ensures footer stays at the bottom of the content */
-}
-
-/* Additional fix for spacing */
-#contact {
-    padding-bottom: 100px; /* Adds extra space for contact section */
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideUp {
-    from { transform: translateY(100px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes slideDown {
-    from { transform: translateY(-100px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero {
-        padding: 80px 20px;
-    }
-
-    section {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul {
-        display: block;
-    }
-
-    .cta-button {
-        width: 100%;
-        padding: 15px;
-        font-size: 1.2rem;
-    }
-
-    section {
-        margin: 10px;
-    }
+    margin-top: auto;
 }
