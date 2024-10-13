@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #005f73;
+    background-color: rgba(0, 95, 115, 0.8); /* 50% transparent background */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -15,9 +15,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    opacity: 0.5; /* Set the transparency to 50% */
 }
-
 
 .logo img {
     width: 150px;
@@ -40,17 +38,17 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Adds space below the navigation */
-.hero {
-    padding-top: 140px; /* Adjust padding to push content below the fixed header */
+/* Add enough space below the fixed header */
+.hero, section {
+    padding-top: 140px; /* Adjust for header height */
     text-align: center;
-    margin-bottom: 40px; /* Add margin below the hero section */
+    margin-bottom: 40px;
 }
 
 .cta-button {
     background-color: #94d2bd;
     color: #005f73;
-    padding: 15px 30px; /* Increase padding for better look */
+    padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
@@ -91,7 +89,7 @@ nav ul li a {
 }
 
 .cta-wrapper {
-    margin-top: 30px; /* Add space above the button */
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -112,36 +110,3 @@ footer {
     margin: 0 10px;
     text-decoration: none;
 }
-
-.benefits-container, .steps, .testimonial, .store {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.benefit, .step, .testimonial, .store {
-    margin: 0 15px;
-    text-align: center;
-}
-
-.testimonial {
-    margin-bottom: 30px; /* Add space between testimonials */
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #f9f9f9; /* Light background for better contrast */
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.testimonial img {
-    border-radius: 50%; /* Circle shape for user images */
-    margin-bottom: 10px;
-}
-
-.testimonial p {
-    font-size: 1.1rem; /* Increase font size for readability */
-    color: #333;
-}
-
