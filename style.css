@@ -121,3 +121,25 @@ footer {
     margin: 0 15px;
     text-align: center;
 }
+
+.testimonial {
+    margin-bottom: 30px; /* Add space between testimonials */
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Light background for better contrast */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.testimonial img {
+    border-radius: 50%; /* Circle shape for user images */
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 1.1rem; /* Increase font size for readability */
+    color: #333;
+}
+
